@@ -35,7 +35,7 @@
             let jsCode = document.getElementById("js-code").value;
             let output = document.getElementById("output");
 
-            output.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>" + "<script>" + jsCode + "<\/script>";
+            output.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>" + jsCode;
             output.contentWindow.eval(jscode);
         }
 
